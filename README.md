@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Project URL
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://react-weather-widgets.netlify.app/
 
 ## Available Scripts
 
