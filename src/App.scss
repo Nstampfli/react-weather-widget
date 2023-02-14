@@ -1,0 +1,65 @@
+body {
+  background: url("../public/photo-1545193544-312983719627_ixlib=rb-1.2.webp");
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Helvetica", "Arial", sans-serif;
+  align-items: center;
+  width: 100%;
+}
+
+#root {
+  width: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 60px;
+  margin-top: 24px;
+  width: 100%;
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .filters {
+      display: flex;
+      gap: 16px;
+      margin-top: 32px;
+
+      .filter {
+        padding: 12px;
+        border: 2px solid white;
+        border-radius: 6px;
+        color: white;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+        text-transform: capitalize;
+
+        &:hover, &.active {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+
+    .widget-container {
+      display: grid;
+      width: 100%;
+      margin-top: 48px;
+      padding: 0px 60px;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
+  }
+}
